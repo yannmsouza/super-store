@@ -1,0 +1,16 @@
+<app-header></app-header>
+<app-menu></app-menu>
+<app-banner [ngClass]="{'is-hidden': hiddenBanner}"></app-banner>
+<div (click)="menu.close()">
+  <br><br><br>
+  <div class="container has-text-centered">
+    <div class="columns is-desktop is-multiline">
+      <app-product-card class="column is-7" *ngFor="let product of items; let i = index" 
+        [product]="product" [view]="true">
+      </app-product-card>
+    </div>
+
+  </div>
+  <br>
+  <app-footer></app-footer>
+</div>

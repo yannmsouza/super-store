@@ -1,0 +1,23 @@
+<app-searchbar [ngClass]="{'is-hidden':!modal}"></app-searchbar>
+
+<nav class="nav animated slideInDown fixed" id="nav-barra">
+  <div class="nav-left">
+    <div class="nav-toggle" (click)="menu.open()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <a href="/">
+      <app-logo></app-logo>
+    </a>
+  </div>
+
+  <div class="nav-right">
+    <a (click)="showSearch()">
+          <i class="fa fa-search"></i>
+    </a>
+    <app-cartbar></app-cartbar>
+
+  </div>
+</nav>
+
